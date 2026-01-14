@@ -12,7 +12,6 @@ function ProductList({ onHomeClick }) {
 
     function handleAddToCart(plantInfo){
         dispatch(addItem(plantInfo));
-
         setAddedToCart((prevState)=>({
             ...prevState,
             [product.name]: true
