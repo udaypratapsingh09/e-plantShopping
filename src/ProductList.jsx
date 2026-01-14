@@ -14,7 +14,7 @@ function ProductList({ onHomeClick }) {
         dispatch(addItem(plantInfo));
         setAddedToCart((prevState)=>({
             ...prevState,
-            [product.name]: true
+            [plantInfo.name]: true
         }))
     }
 
